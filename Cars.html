@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The car project...</title>
+
+
+	<style>
+
+
+	*{
+        padding: 0;
+        margin: 0;
+        font-family: "popping", sans-serif;
+        box-sizing: border-box;
+
+
+	}
+
+    
+        .header{
+             
+             background: #1d1d1d;
+             height: 7vh;
+
+        }
+
+        .logo{
+
+              width: 141px;
+              padding-left: 70px;
+            transition: transform 0.5s;
+        }
+
+
+        .logo:hover{
+                
+                transform: scale(5.0);
+
+        }
+
+        nav{
+
+            display: flex;
+            justify-content: space-between;
+            padding-left: 50px;
+            padding-left: 50px;
+        }
+
+        nav ul li{
+
+              list-style-type: none;
+              padding: 12px;
+        }
+            
+
+        nav ul li a{
+
+             text-decoration: none;
+             color: #fff;
+        }
+
+
+        .secont-header{
+
+             background: linear-gradient(#152238,#1c2e4a,#000080);
+              
+        }
+
+
+        .nav-link{
+            
+           justify-content: center;
+        }
+
+        .nav-link li{
+
+         display: inline-block;
+         padding: 17px;
+               
+        }
+
+        .nav-link li a:hover{
+
+                width: 100%;
+                border-bottom: 3px solid #1d1d1d;
+        }
+
+
+        .container{
+
+           background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("6.jpg");
+
+           background-position: right;
+           background-repeat: no-repeat;
+           height: 560px;
+        }
+
+
+        h1{
+
+          position: absolute;
+          bottom: 400px;
+          left: 500px;
+          color: #fff;
+          transition: transform 0.5s;
+        }
+
+        h1:hover{
+
+             transform:scale(2.0);
+        }
+
+
+
+      .col{
+
+        position: absolute;
+        bottom: 80px;
+        left: 150px;
+
+      }
+        
+
+       .card{
+
+         width: 190px;
+         height: 120px;
+         display:inline-block;
+         border-radius: 10px;
+         padding: 15px 25px;
+         background-repeat: no-repeat;
+         background-size: cover;
+         box-sizing: border-box;
+         cursor: pointer;
+         margin: 10px 15px;
+         color: #fff;
+         font-size: 20px;
+         align-items: center;
+         transition: transform 0.5s;
+
+       }
+
+
+       .card:hover{
+
+           transform:scale(2.0);
+       }
+
+
+       .card1{
+          background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("2x.jpg");
+
+       }
+
+       .card2{
+          background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("7.jpg");
+
+       }
+
+
+       .card4{
+          background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("4.jpg");
+
+       }
+
+       
+       .card5{
+          background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("9.jpg");
+
+       }
+
+
+
+       @media  (max-width:700px){
+
+             .col{
+                
+                position: absolute;
+                bottom: 70px;
+                left: 10px;
+             }
+
+
+             .col .card{
+                       
+                       width: 124px;     
+             }
+
+
+             .logo{
+
+                position: absolute;
+                left: 0;
+             }
+
+
+             nav{
+                justify-content: center;
+             }
+
+
+             .header{
+
+                width: 100%;
+                
+             }
+
+              h1{
+               position: absolute;
+               left: 137px;
+               font-size: 19px;
+             }
+
+            header li a{
+                position: absolute;
+                left: 100px;
+            }
+
+
+
+       }
+
+
+
+       
+   </style>
+</head>
+<body>
+
+	<div class="header">
+<nav>
+      
+        <img src="aa.jpg" class="logo"> 
+         <ul>
+	
+           <li><a href="#" class="link">This is a company site and policy</a></li>
+          
+         </ul>
+</nav>
+
+
+<div class="secont-header">
+            
+            <nav class="nav-link">
+
+           <ul>
+                      <li><a href="#">Bmw</a></li>
+                      <li><a href="#">Service quality</a></li>
+                      <li><a href="#">Office & Campany</a></li>
+                      <li><a href="#">Customer Service</a></li>
+                      <li><a href="#">Event</a></li>
+                   
+             </ul>
+
+            </nav> 
+
+       </div> 
+
+       <div class="container">
+          
+         <h1>THE ALL-NEW 8 SERIES.</h1>
+         
+        <div class="col">
+
+            <div class="card card1">
+              <h5>Bmw</h5>
+            </div>
+
+            <div class="card card2">
+              <h5>Service quality</h5>
+            </div>
+           
+
+           
+
+             <div class="card card4">
+              <h5>Maint quality</h5>
+              </div>
+
+
+                <div class="card card5">
+              <h5>Office</h5>
+              </div>
+
+
+            </div>
+        </div>
+
+       </div>
+
+	</div>
+
+</body>
+</html>

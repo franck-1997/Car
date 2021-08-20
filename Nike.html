@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nike Site..</title>
+
+
+
+	<style>
+       
+       *{
+
+        padding: 0;
+        margin: 0;
+        font-family:"popping", sans-serif ;
+        box-sizing: border-box;
+       }
+
+       .header{
+
+            
+            height: 100vh;
+       }
+
+       nav{
+
+           display: flex;
+          padding-left: 900px;
+
+       }
+
+       nav ul li{
+
+             display: inline-block;
+             padding: 0 12px;
+             list-style-type: none;
+              margin-top: 40px;
+       }
+
+
+       nav ul li a{
+
+            
+            text-decoration: none;
+            font-size: 19px;
+            font-weight: 600;
+            color:#000 ;
+       }
+
+
+     nav ul li a:hover{
+
+         width: 100%;
+         border-bottom: 3px solid #0c1445;
+         transition: width 0,5s;
+     }  
+
+       img{
+
+           position: absolute;
+           bottom: 130px;
+           left: 100px;
+       }
+
+
+       .back-video{
+
+         position: absolute;
+         right: 0;
+         bottom: 0;
+         min-width: 100%;
+         min-height: 100%;
+         width: auto;
+         height: auto;
+         z-index: -100;
+       }
+
+
+       .btn{
+           
+           font-size: 15px;
+           text-decoration: none;
+           color: #fff;
+           border-radius: 8px;
+           border: none;
+           background: #0c1445;
+           padding: 12px;
+           width: 120px;
+
+       }
+
+
+       @media  (max-width:700px){
+
+           .back-video{
+
+              position: absolute;
+              right: 0;
+             bottom: 0;
+              min-width: 100%;
+              min-height: 100%;
+             width: 50%;
+             height: 100%;
+
+           }
+
+
+           img{
+
+             width: 100px;
+             position: absolute;
+               top: 60px;
+                 left: 50px;
+           }
+
+
+           nav{
+                 
+                 right: 50px;
+                 position: absolute; 
+               
+           }
+
+
+           nav ul li{
+
+             margin-top: 22px;
+             display: block;
+           }
+
+
+           nav ul li a {
+            
+               margin-left:12px;
+               margin-right:12px;
+           }
+
+
+           .btn{
+
+            position: absolute;
+            top: 105px;
+            right: 34px;
+            width: 7%;
+
+
+           }
+
+
+
+       }
+
+
+</style>
+</head>
+<body>
+
+	<div class="header">
+  
+        <nav>
+
+          <ul>
+
+            
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Iteams</a></li>
+            <a href="#" class="btn">Shops</a>
+          </ul>
+
+        </nav>
+
+        <div>
+
+         <img src="nike.jpg" class="1-img">
+
+          <video autoplay loop class="back-video" muted plays-inline>
+
+         <source src="Nike.mp4" type="video/mp4">
+          
+        </video>
+        </div>
+
+	</div>
+
+</body>
+</html>
+
+

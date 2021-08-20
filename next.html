@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>next project</title>
+
+	<style>
+           *{
+
+              padding: 0;
+              margin: 0;
+              font-family:"popping",sans-serif;
+               box-sizing: border-box;
+
+           }
+
+           body{
+             background: #000;
+              height: 70%;
+           }
+
+           .header{
+
+             background:red;
+           
+           }
+
+           .header .nav-links{
+              
+                display: flex;
+                justify-content: space-around;
+           }
+           
+          
+         .nav-links ul li{
+               
+            padding: 12px;
+            list-style-type: none;
+            display: inline-block;
+           
+           }
+
+          .nav-links ul li a{
+               margin: 35px;
+              text-decoration: none;
+              color: #fff;
+           }
+
+
+/***************second header **************/
+
+
+           .nav-1 {
+            background:blue;
+            display: flex;
+            justify-content: space-around;
+           }
+
+
+           .second-header nav ul li{
+                padding-top: 41px;
+                list-style-type: none;
+                display: inline-block;
+
+                
+           }
+
+
+
+           .second-header nav ul li a{
+            font-weight: 600;
+            padding: 8px;
+            text-decoration: none;
+            color:#000;
+
+            
+           }
+
+            
+          .logo{
+            border-right: 2px solid #000;
+            width: 150px;
+            padding-left: 5px;
+          }
+
+/****************container ******************/
+
+
+   .container{
+
+      margin-top: 160px;
+      margin-left: 190px;
+   }
+
+    .container h1{
+            color: #fff;
+            font-weight: 600;
+            font-size: 80px; 
+
+    }
+
+
+    .container span, .container p{
+            
+            color: gray;
+            font-weight: 600;
+    }
+
+
+    .btn-container{
+       margin-top: 30px;
+    }
+
+
+    .btn-container button{
+      background: red;
+      color: #fff;
+      padding: 18px;
+      border-radius: 8px;
+      height: 50px;
+
+    }
+
+
+
+     .banner1,.banner2,.banner3,.banner4{
+
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+          
+       }
+
+
+
+
+    .banner1{
+
+             animation: slide1 12s linear infinite;
+        }
+
+
+
+        .banner2{
+
+             animation: slide2 12s linear infinite;
+        }
+
+
+
+        .banner3{
+
+             animation: slide3 12s linear infinite;
+        }
+
+
+
+        .banner4{
+            animation: slide3 12s linear infinite;
+        }
+
+
+
+        
+        @keyframes slide1{
+              
+              0%{
+                  
+                  visibility: visible;
+
+              }
+
+               25%{
+                  
+                  visibility:hidden;
+
+              }
+                 
+
+
+                50%{
+                  
+                  visibility: hidden;
+
+              }
+
+
+               75%{
+                  
+                  visibility: hidden;
+
+              }
+
+
+               100%{
+                  
+                  visibility: visible;
+
+              }
+
+
+
+        }
+
+
+             @keyframes slide2{
+              
+              0%{
+                  
+                  visibility: hidden;
+
+              }
+
+               25%{
+                  
+                  visibility:hidden;
+
+              }
+                 
+
+
+                50%{
+                  
+                  visibility: visible;
+
+              }
+
+
+               75%{
+                  
+                  visibility: hidden;
+
+              }
+
+
+               100%{
+                  
+                  visibility: hidden;
+
+              }
+
+
+
+        }
+
+
+         @keyframes slide3{
+              
+              0%{
+                  
+                  visibility: hidden;
+
+              }
+
+               25%{
+                  
+                  visibility:hidden;
+
+              }
+                 
+
+
+                50%{
+                  
+                  visibility: hidden;
+
+              }
+
+
+               75%{
+                  
+                  visibility: visible;
+
+              }
+
+
+               100%{
+                  
+                  visibility:hidden;
+
+              }
+
+
+
+        }
+
+
+         @keyframes slide4{
+              
+              0%{
+                  
+                  visibility: hidden;
+
+              }
+
+               25%{
+                  
+                  visibility:hidden;
+
+              }
+                 
+
+
+                50%{
+                  
+                  visibility: hidden;
+
+              }
+
+
+               75%{
+                  
+                  visibility: hidden;
+
+              }
+
+
+               100%{
+                  
+                  visibility: visible;
+
+              }
+
+
+
+        }
+
+
+        .banner{
+
+            position: absolute;
+            left: 836px;
+            top: 220px;
+
+        }
+
+
+        img{
+
+          width: 290px;
+          border-radius: 3px;
+        }
+
+          
+
+   </style>
+</head>
+<body>
+  <div class="nav-bar">
+<div class="header">
+  <nav class="nav-links">
+   <ul>
+     <li><a href="#">Times shoping</a></li>
+     <li><a href="#">Vlog</a></li>
+     <li><a href="#">Direction</a></li>
+     <li><a href="#">Sign In</a></li>
+
+   </ul>
+</nav>
+  
+</div>
+
+<div class="second-header">
+	<nav class="nav-1">
+    <img src="puma-logo.svg" class="logo">
+       <ul>
+           <li><a href="#">Shoes</a></li>
+             <li><a href="#">Marketing</a></li>
+               <li><a href="#">Vlog</a></li>
+                 <li><a href="#">Paite</a></li>
+                   <li><a href="#">Location</a></li>
+                     <li><a href="#">Contact</a></li>
+            
+       </ul>
+	</nav>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+      
+      <h1>Holiday Deals</h1>
+      <span>Hand Picked style</span>
+      <p>At Our Best Offers Of the season.</p>
+      <div class="btn-container">
+         <button>Style Man</button>
+        <button>Style Femme</button>
+          <button>Style Kids</button>
+      </div>
+      <div class="banner">
+      <div class="banner1">
+        <img src="00.jpg">
+      </div>
+
+       <div class="banner2">
+        <img src="86.jpg">
+      </div>
+
+
+      <div class="banner3">
+        <img src="00.jpg">
+      </div>
+
+
+       <div class="banner4">
+        <img src="pre.jpg">
+      </div>
+
+</div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
